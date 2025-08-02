@@ -1,7 +1,11 @@
 package com.boomliapps.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
 
-public interface HomeRepository extends JpaRepository<T, ID>{
+import com.boomliapps.entities.Home;
+
+@Repository
+public interface HomeRepository extends JpaRepository<Home, Long>{
 
 }
